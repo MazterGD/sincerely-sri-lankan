@@ -9,7 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@plasmicapp/cli": "^0.1.336",
     "@plasmicapp/loader-nextjs": "^1.0.417",
+    "@plasmicapp/react-web": "^0.2.377",
+    "@plasmicpkgs/antd5": "^0.0.278",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.234",
+    "@plasmicpkgs/react-aria": "^0.0.119",
+    "@plasmicpkgs/react-parallax-tilt": "^0.0.211",
+    "@plasmicpkgs/react-scroll-parallax": "^0.0.219",
+    "@plasmicpkgs/react-youtube": "^7.13.215",
     "next": "14.2.25",
     "react": "^18",
     "react-dom": "^18"
