@@ -51,20 +51,20 @@ import {
   useDollarState,
   usePlasmicTranslator,
   useTrigger,
-  wrapWithClassName
+  wrapWithClassName,
 } from "@plasmicapp/react-web";
 import {
   DataCtxReader as DataCtxReader__,
   useDataEnv,
-  useGlobalActions
+  useGlobalActions,
 } from "@plasmicapp/react-web/lib/host";
 
-import Header from "../../Header"; // plasmic-import: gcpmzTU7M7CU/component
+import Header from "../../../.plasmic/Header"; // plasmic-import: gcpmzTU7M7CU/component
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
-import Button from "../../Button"; // plasmic-import: 0EHALpIu9wa4/component
-import TextInput from "../../TextInput"; // plasmic-import: XnjXtIWN8Mpf/component
+import Button from "../../../.plasmic/Button"; // plasmic-import: 0EHALpIu9wa4/component
+import TextInput from "../../../.plasmic/TextInput"; // plasmic-import: XnjXtIWN8Mpf/component
 
 import { useScreenVariants as useScreenVariantseoIIho6Ui3Kx } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: eoIIho6UI3KX/globalVariant
 
@@ -151,7 +151,7 @@ function PlasmicHomepage__RenderFunc(props: {
 
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
 
   const __nextRouter = useNextRouter();
@@ -165,8 +165,8 @@ function PlasmicHomepage__RenderFunc(props: {
         path: "textInput.value",
         type: "private",
         variableType: "text",
-        initFunc: ({ $props, $state, $queries, $ctx }) => ""
-      }
+        initFunc: ({ $props, $state, $queries, $ctx }) => "",
+      },
     ],
     [$props, $ctx, $refs]
   );
@@ -174,11 +174,11 @@ function PlasmicHomepage__RenderFunc(props: {
     $props,
     $ctx,
     $queries: {},
-    $refs
+    $refs,
   });
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantseoIIho6Ui3Kx()
+    screen: useScreenVariantseoIIho6Ui3Kx(),
   });
 
   return (
@@ -272,7 +272,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/image6.png",
                       fullWidth: 995,
                       fullHeight: 539,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
 
@@ -348,7 +348,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 src: "/plasmic/sincerely_sri_lankan_website/images/image10.png",
                 fullWidth: 800,
                 fullHeight: 195,
-                aspectRatio: undefined
+                aspectRatio: undefined,
               }}
             />
           </div>
@@ -412,7 +412,7 @@ function PlasmicHomepage__RenderFunc(props: {
                             displayWidth={"100%"}
                             height={"503"}
                             loading={"lazy"}
-                            onScroll={async event => {
+                            onScroll={async (event) => {
                               const $steps = {};
 
                               $steps["updateTextInputValue"] = true
@@ -420,15 +420,15 @@ function PlasmicHomepage__RenderFunc(props: {
                                     const actionArgs = {
                                       variable: {
                                         objRoot: $state,
-                                        variablePath: ["textInput", "value"]
+                                        variablePath: ["textInput", "value"],
                                       },
-                                      operation: 0
+                                      operation: 0,
                                     };
                                     return (({
                                       variable,
                                       value,
                                       startIndex,
-                                      deleteCount
+                                      deleteCount,
                                     }) => {
                                       if (!variable) {
                                         return;
@@ -1505,7 +1505,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 src: "/plasmic/sincerely_sri_lankan_website/images/image3.png",
                 fullWidth: 1501,
                 fullHeight: 1016,
-                aspectRatio: undefined
+                aspectRatio: undefined,
               }}
             />
 
@@ -1575,7 +1575,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image3.png",
                     fullWidth: 1501,
                     fullHeight: 1016,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -1593,7 +1593,7 @@ function PlasmicHomepage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image5.png",
                     fullWidth: 200,
                     fullHeight: 200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
               </Stack__>
@@ -1635,7 +1635,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         src: "/plasmic/sincerely_sri_lankan_website/images/image7.png",
                         fullWidth: 741,
                         fullHeight: 347,
-                        aspectRatio: undefined
+                        aspectRatio: undefined,
                       }}
                     />
 
@@ -1678,7 +1678,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         src: "/plasmic/sincerely_sri_lankan_website/images/image8.png",
                         fullWidth: 600,
                         fullHeight: 360,
-                        aspectRatio: undefined
+                        aspectRatio: undefined,
                       }}
                     />
 
@@ -1720,7 +1720,7 @@ function PlasmicHomepage__RenderFunc(props: {
                         src: "/plasmic/sincerely_sri_lankan_website/images/image9.png",
                         fullWidth: 750,
                         fullHeight: 454,
-                        aspectRatio: undefined
+                        aspectRatio: undefined,
                       }}
                     />
 
@@ -1771,8 +1771,8 @@ function PlasmicHomepage__RenderFunc(props: {
                       ((...eventArgs) => {
                         generateStateOnChangeProp($state, [
                           "textInput",
-                          "value"
-                        ])((e => e.target?.value).apply(null, eventArgs));
+                          "value",
+                        ])(((e) => e.target?.value).apply(null, eventArgs));
                       }).apply(null, eventArgs);
 
                       if (
@@ -1793,7 +1793,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__onY1)}
                     color={"sand"}
-                    onClick={async event => {
+                    onClick={async (event) => {
                       const $steps = {};
                     }}
                     submitsForm={true}
@@ -2067,7 +2067,7 @@ const PlasmicDescendants = {
     "section1",
     "rowContainer8",
     "textInput",
-    "blockquote"
+    "blockquote",
   ],
   headerMainSection: ["headerMainSection", "container", "header"],
   container: ["container", "header"],
@@ -2089,7 +2089,7 @@ const PlasmicDescendants = {
     "section17",
     "rowContainer13",
     "section18",
-    "rowContainer14"
+    "rowContainer14",
   ],
   section12: ["section12", "rowContainer3"],
   rowContainer3: ["rowContainer3"],
@@ -2108,7 +2108,7 @@ const PlasmicDescendants = {
   section1: ["section1", "rowContainer8"],
   rowContainer8: ["rowContainer8"],
   textInput: ["textInput"],
-  blockquote: ["blockquote"]
+  blockquote: ["blockquote"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -2177,7 +2177,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicHomepage__ArgProps,
-          internalVariantPropNames: PlasmicHomepage__VariantProps
+          internalVariantPropNames: PlasmicHomepage__VariantProps,
         }),
       [props, nodeName]
     );
@@ -2185,7 +2185,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -2235,8 +2235,8 @@ export const PlasmicHomepage = Object.assign(
       title: "",
       description: "",
       ogImageSrc: "",
-      canonical: ""
-    }
+      canonical: "",
+    },
   }
 );
 

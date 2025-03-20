@@ -16,6 +16,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".plasmic/Button.tsx", ".plasmic/Button2.tsx", ".plasmic/Header.tsx", ".plasmic/TextInput.tsx"],
   "exclude": ["node_modules", ".plasmic"]
 }

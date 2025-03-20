@@ -60,13 +60,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const pageModules = await PLASMIC.fetchPages();
+  const paths = [
+    { params: { catchall: ["lcpage"] } },
+    { params: { catchall: ["exchangespage"] } },
+    { params: { catchall: ["contactpage"] } },
+  ];
+
+  // Exclude these paths from the catchall route
+  const excludedPaths = ["/lcpage", "/exchangespage", "/contactpage"];
+  const filteredPaths = paths.filter((path) => !excludedPaths.includes(`/${path.params.catchall.join("/")}`));
+
   return {
-    paths: pageModules.map((mod) => ({
-      params: {
-        catchall: mod.path.substring(1).split("/"),
-      },
-    })),
+    paths: filteredPaths,
     fallback: "blocking",
   };
 }

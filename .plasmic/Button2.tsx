@@ -3,8 +3,8 @@
 import * as React from "react";
 import {
   PlasmicButton2,
-  DefaultButton2Props
-} from "./plasmic/sincerely_sri_lankan_website/PlasmicButton2";
+  DefaultButton2Props,
+} from "../components/plasmic/sincerely_sri_lankan_website/PlasmicButton2";
 
 // Your component props start with props for variants and slots you defined
 // in Plasmic, but you can add more here, like event handlers that you can

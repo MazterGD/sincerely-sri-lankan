@@ -51,15 +51,15 @@ import {
   useDollarState,
   usePlasmicTranslator,
   useTrigger,
-  wrapWithClassName
+  wrapWithClassName,
 } from "@plasmicapp/react-web";
 import {
   DataCtxReader as DataCtxReader__,
   useDataEnv,
-  useGlobalActions
+  useGlobalActions,
 } from "@plasmicapp/react-web/lib/host";
 
-import Header from "../../Header"; // plasmic-import: gcpmzTU7M7CU/component
+import Header from "../../../.plasmic/Header"; // plasmic-import: gcpmzTU7M7CU/component
 import { InfiniteMenuContainer } from "../../InfiniteMenuContainer"; // plasmic-import: y16k3U0uSpK3/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -117,7 +117,7 @@ function PlasmicExchangespage__RenderFunc(props: {
 
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
 
   const __nextRouter = useNextRouter();
@@ -255,7 +255,7 @@ function PlasmicExchangespage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: ["root", "header", "infiniteMenuContainer"],
   header: ["header"],
-  infiniteMenuContainer: ["infiniteMenuContainer"]
+  infiniteMenuContainer: ["infiniteMenuContainer"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -302,7 +302,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicExchangespage__ArgProps,
-          internalVariantPropNames: PlasmicExchangespage__VariantProps
+          internalVariantPropNames: PlasmicExchangespage__VariantProps,
         }),
       [props, nodeName]
     );
@@ -310,7 +310,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -338,8 +338,8 @@ export const PlasmicExchangespage = Object.assign(
       title: "",
       description: "",
       ogImageSrc: "",
-      canonical: ""
-    }
+      canonical: "",
+    },
   }
 );
 

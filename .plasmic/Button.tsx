@@ -1,13 +1,13 @@
 import * as React from "react";
 import {
   PlasmicButton,
-  DefaultButtonProps
-} from "./plasmic/sincerely_sri_lankan_website/PlasmicButton";
+  DefaultButtonProps,
+} from "../components/plasmic/sincerely_sri_lankan_website/PlasmicButton";
 
 import {
   ButtonRef,
   HtmlAnchorOnlyProps,
-  HtmlButtonOnlyProps
+  HtmlButtonOnlyProps,
 } from "@plasmicapp/react-web";
 
 export interface ButtonProps extends DefaultButtonProps {

@@ -1,8 +1,8 @@
 import * as React from "react";
 import {
   PlasmicTextInput,
-  DefaultTextInputProps
-} from "./plasmic/sincerely_sri_lankan_website/PlasmicTextInput";
+  DefaultTextInputProps,
+} from "../components/plasmic/sincerely_sri_lankan_website/PlasmicTextInput";
 
 import { TextInputRef } from "@plasmicapp/react-web";
 
@@ -23,6 +23,6 @@ export default Object.assign(
   TextInput,
 
   {
-    __plumeType: "text-input"
+    __plumeType: "text-input",
   }
 );

@@ -3,8 +3,8 @@
 import * as React from "react";
 import {
   PlasmicHeader,
-  DefaultHeaderProps
-} from "./plasmic/sincerely_sri_lankan_website/PlasmicHeader";
+  DefaultHeaderProps,
+} from "../components/plasmic/sincerely_sri_lankan_website/PlasmicHeader";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined

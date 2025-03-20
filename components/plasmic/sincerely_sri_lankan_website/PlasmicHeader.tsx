@@ -51,15 +51,15 @@ import {
   useDollarState,
   usePlasmicTranslator,
   useTrigger,
-  wrapWithClassName
+  wrapWithClassName,
 } from "@plasmicapp/react-web";
 import {
   DataCtxReader as DataCtxReader__,
   useDataEnv,
-  useGlobalActions
+  useGlobalActions,
 } from "@plasmicapp/react-web/lib/host";
 
-import Button2 from "../../Button2"; // plasmic-import: uBHYOO-5nmaV/component
+import Button2 from "../../../.plasmic/Button2"; // plasmic-import: uBHYOO-5nmaV/component
 
 import { useScreenVariants as useScreenVariantseoIIho6Ui3Kx } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: eoIIho6UI3KX/globalVariant
 
@@ -125,7 +125,7 @@ function PlasmicHeader__RenderFunc(props: {
 
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
 
   const __nextRouter = useNextRouter();
@@ -134,7 +134,7 @@ function PlasmicHeader__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantseoIIho6Ui3Kx()
+    screen: useScreenVariantseoIIho6Ui3Kx(),
   });
 
   return (
@@ -173,7 +173,7 @@ function PlasmicHeader__RenderFunc(props: {
           displayMinHeight={"0"}
           displayMinWidth={"0"}
           displayWidth={"auto"}
-          onClick={async event => {
+          onClick={async (event) => {
             const $steps = {};
 
             $steps["goToHomepage"] = true
@@ -205,7 +205,7 @@ function PlasmicHeader__RenderFunc(props: {
             src: "/plasmic/sincerely_sri_lankan_website/images/logoYellowPng.png",
             fullWidth: 3771,
             fullHeight: 1526,
-            aspectRatio: undefined
+            aspectRatio: undefined,
           }}
         />
 
@@ -235,7 +235,7 @@ function PlasmicHeader__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__eaUb7
               )}
-              onClick={async event => {
+              onClick={async (event) => {
                 const $steps = {};
 
                 $steps["goToHomepage"] = true
@@ -338,7 +338,7 @@ function PlasmicHeader__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__wki1X
               )}
-              onClick={async event => {
+              onClick={async (event) => {
                 const $steps = {};
 
                 $steps["goToExchangespage"] = true
@@ -401,7 +401,7 @@ function PlasmicHeader__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__so4Dv
               )}
-              onClick={async event => {
+              onClick={async (event) => {
                 const $steps = {};
 
                 $steps["goToLCpage"] = true
@@ -491,7 +491,7 @@ function PlasmicHeader__RenderFunc(props: {
                 {"Contact Us"}
               </div>
             }
-            onClick={async event => {
+            onClick={async (event) => {
               const $steps = {};
 
               $steps["goToContactpage"] = true
@@ -574,7 +574,7 @@ const PlasmicDescendants = {
   menu: ["menu", "menuBar", "img", "button2"],
   menuBar: ["menuBar", "img", "button2"],
   img: ["img"],
-  button2: ["button2"]
+  button2: ["button2"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -622,7 +622,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicHeader__ArgProps,
-          internalVariantPropNames: PlasmicHeader__VariantProps
+          internalVariantPropNames: PlasmicHeader__VariantProps,
         }),
       [props, nodeName]
     );
@@ -630,7 +630,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "menu") {
@@ -652,7 +652,7 @@ export const PlasmicHeader = Object.assign(
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
-    internalArgProps: PlasmicHeader__ArgProps
+    internalArgProps: PlasmicHeader__ArgProps,
   }
 );
 

@@ -51,15 +51,15 @@ import {
   useDollarState,
   usePlasmicTranslator,
   useTrigger,
-  wrapWithClassName
+  wrapWithClassName,
 } from "@plasmicapp/react-web";
 import {
   DataCtxReader as DataCtxReader__,
   useDataEnv,
-  useGlobalActions
+  useGlobalActions,
 } from "@plasmicapp/react-web/lib/host";
 
-import Header from "../../Header"; // plasmic-import: gcpmzTU7M7CU/component
+import Header from "../../../.plasmic/Header"; // plasmic-import: gcpmzTU7M7CU/component
 import { FlowingMenuContainer } from "../../FlowingMenu/FlowingMenuContainer"; // plasmic-import: 8A8p6Ubs46MZ/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -117,7 +117,7 @@ function PlasmicLCpage__RenderFunc(props: {
 
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
 
   const __nextRouter = useNextRouter();
@@ -196,7 +196,7 @@ function PlasmicLCpage__RenderFunc(props: {
                   src: "/plasmic/sincerely_sri_lankan_website/images/pngtreeMandalaDesignLineArtTraditional13535684Png.png",
                   fullWidth: 4096,
                   fullHeight: 4096,
-                  aspectRatio: undefined
+                  aspectRatio: undefined,
                 }}
               />
 
@@ -214,7 +214,7 @@ function PlasmicLCpage__RenderFunc(props: {
                   src: "/plasmic/sincerely_sri_lankan_website/images/pngtreeLotusFlowerColoringPagesTo11046965Png.png",
                   fullWidth: 4267,
                   fullHeight: 4267,
-                  aspectRatio: undefined
+                  aspectRatio: undefined,
                 }}
               />
             </div>
@@ -228,7 +228,7 @@ function PlasmicLCpage__RenderFunc(props: {
 const PlasmicDescendants = {
   root: ["root", "header", "flowingMenuContainer"],
   header: ["header"],
-  flowingMenuContainer: ["flowingMenuContainer"]
+  flowingMenuContainer: ["flowingMenuContainer"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -275,7 +275,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicLCpage__ArgProps,
-          internalVariantPropNames: PlasmicLCpage__VariantProps
+          internalVariantPropNames: PlasmicLCpage__VariantProps,
         }),
       [props, nodeName]
     );
@@ -283,7 +283,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -311,8 +311,8 @@ export const PlasmicLCpage = Object.assign(
       title: "LC Page",
       description: "",
       ogImageSrc: "",
-      canonical: ""
-    }
+      canonical: "",
+    },
   }
 );
 

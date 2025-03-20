@@ -1,6 +1,9 @@
 {
   "extends": ["next/core-web-vitals", "next/typescript"],
-  "ignorePatterns": [".plasmic/**/*"]
+  "ignorePatterns": ["components/plasmic/**/*"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off"
+  }
 }
 
 

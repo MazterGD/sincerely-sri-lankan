@@ -51,15 +51,15 @@ import {
   useDollarState,
   usePlasmicTranslator,
   useTrigger,
-  wrapWithClassName
+  wrapWithClassName,
 } from "@plasmicapp/react-web";
 import {
   DataCtxReader as DataCtxReader__,
   useDataEnv,
-  useGlobalActions
+  useGlobalActions,
 } from "@plasmicapp/react-web/lib/host";
 
-import Header from "../../Header"; // plasmic-import: gcpmzTU7M7CU/component
+import Header from "../../../.plasmic/Header"; // plasmic-import: gcpmzTU7M7CU/component
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -116,7 +116,7 @@ function PlasmicContactpage__RenderFunc(props: {
 
   const $props = {
     ...args,
-    ...variants
+    ...variants,
   };
 
   const __nextRouter = useNextRouter();
@@ -174,7 +174,7 @@ function PlasmicContactpage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image4.png",
                     fullWidth: 1200,
                     fullHeight: 1200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -193,7 +193,7 @@ function PlasmicContactpage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png",
                       fullWidth: 466,
                       fullHeight: 715,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
                 </div>
@@ -263,7 +263,7 @@ function PlasmicContactpage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image4.png",
                     fullWidth: 1200,
                     fullHeight: 1200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -282,7 +282,7 @@ function PlasmicContactpage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png",
                       fullWidth: 466,
                       fullHeight: 715,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
                 </div>
@@ -352,7 +352,7 @@ function PlasmicContactpage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image4.png",
                     fullWidth: 1200,
                     fullHeight: 1200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -371,7 +371,7 @@ function PlasmicContactpage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png",
                       fullWidth: 466,
                       fullHeight: 715,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
                 </div>
@@ -445,7 +445,7 @@ function PlasmicContactpage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image4.png",
                     fullWidth: 1200,
                     fullHeight: 1200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -464,7 +464,7 @@ function PlasmicContactpage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png",
                       fullWidth: 466,
                       fullHeight: 715,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
                 </div>
@@ -534,7 +534,7 @@ function PlasmicContactpage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image4.png",
                     fullWidth: 1200,
                     fullHeight: 1200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -553,7 +553,7 @@ function PlasmicContactpage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png",
                       fullWidth: 466,
                       fullHeight: 715,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
                 </div>
@@ -625,7 +625,7 @@ function PlasmicContactpage__RenderFunc(props: {
                     src: "/plasmic/sincerely_sri_lankan_website/images/image4.png",
                     fullWidth: 1200,
                     fullHeight: 1200,
-                    aspectRatio: undefined
+                    aspectRatio: undefined,
                   }}
                 />
 
@@ -644,7 +644,7 @@ function PlasmicContactpage__RenderFunc(props: {
                       src: "/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png",
                       fullWidth: 466,
                       fullHeight: 715,
-                      aspectRatio: undefined
+                      aspectRatio: undefined,
                     }}
                   />
                 </div>
@@ -709,7 +709,7 @@ function PlasmicContactpage__RenderFunc(props: {
 
 const PlasmicDescendants = {
   root: ["root", "header"],
-  header: ["header"]
+  header: ["header"],
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -755,7 +755,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
           name: nodeName,
           descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicContactpage__ArgProps,
-          internalVariantPropNames: PlasmicContactpage__VariantProps
+          internalVariantPropNames: PlasmicContactpage__VariantProps,
         }),
       [props, nodeName]
     );
@@ -763,7 +763,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       variants,
       args,
       overrides,
-      forNode: nodeName
+      forNode: nodeName,
     });
   };
   if (nodeName === "root") {
@@ -790,8 +790,8 @@ export const PlasmicContactpage = Object.assign(
       title: "",
       description: "",
       ogImageSrc: "",
-      canonical: ""
-    }
+      canonical: "",
+    },
   }
 );
 
