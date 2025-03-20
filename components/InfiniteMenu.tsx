@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
 import { FC, useRef, useState, useEffect, MutableRefObject } from "react";
 import { mat4, quat, vec2, vec3 } from "gl-matrix";
-import "./InfiniteMenu.module.css";
+import styles from "../styles/InfiniteMenu.module.css";
 
 // -------- Shader Sources --------
 
@@ -1333,24 +1333,43 @@ const InfiniteMenu: FC<InfiniteMenuProps> = ({ items = [] }) => {
   };
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100%" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        position: "relative",
+        width: "strech",
+        height: "100%",
+      }}
+    >
       <canvas id="infinite-grid-menu-canvas" ref={canvasRef} />
 
       {activeItem && (
         <>
-          <h2 className={`face-title ${isMoving ? "inactive" : "active"}`}>
+          <h2
+            className={`${styles.faceTitle} ${
+              isMoving ? styles.inactive : styles.active
+            }`}
+          >
             {activeItem.title}
           </h2>
 
-          <p className={`face-description ${isMoving ? "inactive" : "active"}`}>
+          <p
+            className={`${styles.faceDescription} ${
+              isMoving ? styles.inactive : styles.active
+            }`}
+          >
             {activeItem.description}
           </p>
 
           <div
             onClick={handleButtonClick}
-            className={`action-button ${isMoving ? "inactive" : "active"}`}
+            className={`${styles.actionButton} ${
+              isMoving ? styles.inactive : styles.active
+            }`}
           >
-            <p className="action-button-icon">&#x2197;</p>
+            <p className={styles.actionButtonIcon}>&#x2197;</p>
           </div>
         </>
       )}

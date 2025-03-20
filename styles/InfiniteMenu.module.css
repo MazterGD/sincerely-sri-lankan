@@ -7,15 +7,18 @@
     overflow: hidden;
     position: relative;
     outline: none;
+    /* border: 5px solid white;
+    border-radius: 5px; */
   }
   
   #infinite-grid-menu-canvas:active {
     cursor: grabbing;
   }
   
-  .action-button {
+  .actionButton {
     position: absolute;
     left: 50%;
+    /* bottom: 85%; */
     z-index: 10;
     width: 60px;
     height: 60px;
@@ -28,16 +31,17 @@
     border: 5px solid #000;
   }
   
-  .face-title {
+  .faceTitle {
     user-select: none;
     position: absolute;
     font-weight: 900;
-    font-size: 4rem;
-    left: 1.6em;
-    top: 50%;
+    color: white;
+    font-size: 3rem;
+    left: 28%;
+    top: 48%;
   }
   
-  .action-button-icon {
+  .actionButtonIcon {
     user-select: none;
     position: relative;
     color: #060606;
@@ -45,55 +49,56 @@
     font-size: 26px;
   }
   
-  .face-title {
+  .faceTitle {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
     transform: translate(20%, -50%);
   }
   
-  .face-title.active {
+  .faceTitle.active {
     opacity: 1;
     transform: translate(20%, -50%);
     pointer-events: auto;
     transition: 0.5s ease;
   }
   
-  .face-title.inactive {
+  .faceTitle.inactive {
     pointer-events: none;
     opacity: 0;
     transition: 0.1s ease;
   }
   
-  .face-description {
+  .faceDescription {
     user-select: none;
     position: absolute;
     max-width: 10ch;
     top: 50%;
+    color: white;
     font-size: 1.5rem;
-    right: 1%;
+    right: 20%;
     transform: translate(0, -50%);
   }
   
-  .face-description.active {
+  .faceDescription.active {
     opacity: 1;
     transform: translate(-90%, -50%);
     pointer-events: auto;
     transition: 0.5s ease;
   }
   
-  .face-description.inactive {
+  .faceDescription.inactive {
     pointer-events: none;
     transform: translate(-60%, -50%);
     opacity: 0;
     transition: 0.1s ease;
   }
   
-  .action-button {
+  .actionButton {
     position: absolute;
     left: 50%;
   }
   
-  .action-button.active {
+  .actionButton.active {
     bottom: 3.8em;
     transform: translateX(-50%) scale(1);
     opacity: 1;
@@ -101,7 +106,7 @@
     transition: 0.5s ease;
   }
   
-  .action-button.inactive {
+  .actionButton.inactive {
     bottom: -80px;
     transform: translateX(-50%) scale(0);
     opacity: 0;
@@ -110,7 +115,7 @@
   }
   
   @media (max-width: 1500px) {
-    .face-title, .face-description {
+    .faceTitle, .faceDescription {
       display: none;
     }
   }
