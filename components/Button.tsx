@@ -12,6 +12,7 @@ import {
 
 export interface ButtonProps extends DefaultButtonProps {
   // Feel free to add any additional props that this component should receive
+  someProperty: string;
 }
 function Button_(props: ButtonProps, ref: ButtonRef) {
   const { plasmicProps } = PlasmicButton.useBehavior<ButtonProps>(props, ref);
