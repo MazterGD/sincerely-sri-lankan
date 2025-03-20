@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -419,7 +419,8 @@
           "componentImportPath": "@plasmicpkgs/antd5/skinny/registerBreadcrumb"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "gmeH6XgPaBtkt51HunAo4g",
@@ -649,7 +650,8 @@
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "84wxoth5npGrp6RRXPL88z",
@@ -677,7 +679,8 @@
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -699,7 +702,8 @@
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -757,7 +761,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "quDeq6xe5KMiTCfKiiLfyW",
@@ -833,6 +838,48 @@
           "cssFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "NU2jQ6vkLZ4_",
+          "name": "LCpage",
+          "type": "managed",
+          "projectId": "quDeq6xe5KMiTCfKiiLfyW",
+          "renderModuleFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicLCpage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/lcpage.tsx"
+          },
+          "cssFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicLCpage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/lcpage"
+        },
+        {
+          "id": "X2cqL1Cthc0K",
+          "name": "Exchangespage",
+          "type": "managed",
+          "projectId": "quDeq6xe5KMiTCfKiiLfyW",
+          "renderModuleFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicExchangespage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/exchangespage.tsx"
+          },
+          "cssFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicExchangespage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/exchangespage"
+        },
+        {
+          "id": "tAA3tg-kIQ8L",
+          "name": "Contactpage",
+          "type": "managed",
+          "projectId": "quDeq6xe5KMiTCfKiiLfyW",
+          "renderModuleFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicContactpage.tsx",
+          "importSpec": {
+            "modulePath": "../pages/contactpage.tsx"
+          },
+          "cssFilePath": "plasmic/sincerely_sri_lankan_website/PlasmicContactpage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/contactpage"
         }
       ],
       "icons": [
@@ -1007,6 +1054,61 @@
           "id": "2qYbBkmVRel-",
           "name": "image 3",
           "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image3.png"
+        },
+        {
+          "id": "MqnVgpdQH609",
+          "name": "—Pngtree—mandala design line art traditional_13535684.png",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/pngtreeMandalaDesignLineArtTraditional13535684Png.png"
+        },
+        {
+          "id": "jGOEA4oE0cx-",
+          "name": "—Pngtree—lotus flower coloring pages to_11046965.png",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/pngtreeLotusFlowerColoringPagesTo11046965Png.png"
+        },
+        {
+          "id": "tgGd239tQYZq",
+          "name": "kindpng_655303.png",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/kindpng655303Png.png"
+        },
+        {
+          "id": "dCgbqhVVBpft",
+          "name": "image 4",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image4.png"
+        },
+        {
+          "id": "z0tLKVsuZlVM",
+          "name": "image 5",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image5.png"
+        },
+        {
+          "id": "F_ut562Jpy8t",
+          "name": "image 6",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image6.png"
+        },
+        {
+          "id": "PdmJs_rP47TC",
+          "name": "image 7",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image7.png"
+        },
+        {
+          "id": "QNEd7BX5HTLN",
+          "name": "image 8",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image8.png"
+        },
+        {
+          "id": "x7O229RHOb8P",
+          "name": "image 9",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image9.png"
+        },
+        {
+          "id": "5uYayxXXuErU",
+          "name": "image 10",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image10.png"
+        },
+        {
+          "id": "H_6pZ4Ox-qlW",
+          "name": "image 11",
+          "filePath": "../public/plasmic/sincerely_sri_lankan_website/images/image11.png"
         }
       ],
       "indirect": false,
@@ -1024,6 +1126,84 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        },
+        {
+          "id": "dVerKHJA2GrA",
+          "name": "Greetings",
+          "displayName": "Greetings",
+          "componentImportPath": "./components/Greetings"
+        },
+        {
+          "id": "y16k3U0uSpK3",
+          "name": "InfiniteMenuContainer",
+          "displayName": "InfiniteMenuContainer",
+          "componentImportPath": "./components/InfiniteMenuContainer"
+        },
+        {
+          "id": "8A8p6Ubs46MZ",
+          "name": "FlowingMenuContainer",
+          "displayName": "FlowingMenuContainer",
+          "componentImportPath": "./components/FlowingMenu/FlowingMenuContainer"
+        },
+        {
+          "id": "7jhaErP1__2L",
+          "name": "RollingGallery",
+          "displayName": "RollingGallery",
+          "componentImportPath": "./components/RollingGallery/RollingGallery"
+        },
+        {
+          "id": "lViaiJ5xaHZ1",
+          "name": "FlyingPostersContainer",
+          "displayName": "FlyingPostersContainer",
+          "componentImportPath": "./components/FlyingPosters/FlyingPostersContainer"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "r3ASNrnyvLLLAtDvzUioQ",
+      "projectApiToken": "eSFGpQaYCtO9sRbPuQ2Ll9dmLOg8I4oKhx6e1PuCrsfmUIVbFbSXcy32UrPTwF9zX2HVXA0xaIKJNhCMHvA",
+      "projectName": "react-slick",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_slick/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HOQUyOpClJ",
+          "name": "SliderWrapper",
+          "displayName": "hostless-slider",
+          "componentImportPath": "@plasmicpkgs/react-slick",
+          "helper": {
+            "name": "sliderHelpers",
+            "importPath": "@plasmicpkgs/react-slick"
+          }
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "displayName": "hostless-reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
       "customFunctions": []

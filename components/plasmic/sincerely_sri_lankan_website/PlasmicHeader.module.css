@@ -281,7 +281,7 @@
   color: #05050599;
   flex-shrink: 0;
 }
-.text__kEIW {
+.link__kEIW {
   color: var(--token-LyfD59kQy9XP);
   letter-spacing: 0.1em;
   font-weight: 400;
@@ -289,7 +289,7 @@
   padding-top: 0px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text__kEIW {
+  .link__kEIW {
     font-size: 13px;
   }
 }
@@ -490,6 +490,7 @@
   letter-spacing: 0.1em;
   font-weight: 400;
   font-size: 17px;
+  display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__jaaYb {

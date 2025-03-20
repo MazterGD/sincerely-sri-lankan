@@ -61,8 +61,10 @@ import {
 
 import Header from "../../Header"; // plasmic-import: gcpmzTU7M7CU/component
 import { Video } from "@plasmicpkgs/plasmic-basic-components";
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
 import Button from "../../Button"; // plasmic-import: 0EHALpIu9wa4/component
+import { FlyingPostersContainer } from "../../FlyingPosters/FlyingPostersContainer"; // plasmic-import: lViaiJ5xaHZ1/codeComponent
 import TextInput from "../../TextInput"; // plasmic-import: XnjXtIWN8Mpf/component
 
 import { useScreenVariants as useScreenVariantseoIIho6Ui3Kx } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: eoIIho6UI3KX/globalVariant
@@ -112,6 +114,7 @@ export type PlasmicHomepage__OverridesType = {
   rowContainer13?: Flex__<"div">;
   section18?: Flex__<"div">;
   rowContainer14?: Flex__<"div">;
+  flyingPostersContainer?: Flex__<typeof FlyingPostersContainer>;
   section1?: Flex__<"div">;
   rowContainer8?: Flex__<"div">;
   textInput?: Flex__<typeof TextInput>;
@@ -257,6 +260,24 @@ function PlasmicHomepage__RenderFunc(props: {
                     }
                   />
 
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img___5BzM)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"100%"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/sincerely_sri_lankan_website/images/image6.png",
+                      fullWidth: 995,
+                      fullHeight: 539,
+                      aspectRatio: undefined
+                    }}
+                  />
+
                   <h1
                     className={classNames(
                       projectcss.all,
@@ -315,906 +336,1192 @@ function PlasmicHomepage__RenderFunc(props: {
                 </h1>
               </Stack__>
             </div>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img___1HYvc)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/sincerely_sri_lankan_website/images/image10.png",
+                fullWidth: 800,
+                fullHeight: 195,
+                aspectRatio: undefined
+              }}
+            />
           </div>
           <div
             data-plasmic-name={"brownColorBg"}
             data-plasmic-override={overrides.brownColorBg}
             className={classNames(projectcss.all, sty.brownColorBg)}
           >
-            <div
-              data-plasmic-name={"section12"}
-              data-plasmic-override={overrides.section12}
-              className={classNames(projectcss.all, sty.section12)}
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__zOtIx)}
+              delay={2}
+              direction={"left"}
+              effect={"jackinthebox"}
+              triggerOnce={true}
             >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax___4Qwil
-                )}
-                speed={-4}
+              <div
+                data-plasmic-name={"section12"}
+                data-plasmic-override={overrides.section12}
+                className={classNames(projectcss.all, sty.section12)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__md63J)}>
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax___4Qwil
+                  )}
+                  speed={-5}
+                >
                   <div
-                    data-plasmic-name={"rowContainer3"}
-                    data-plasmic-override={overrides.rowContainer3}
-                    className={classNames(projectcss.all, sty.rowContainer3)}
+                    className={classNames(projectcss.all, sty.freeBox__md63J)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.columns__lUe2X)}
+                      data-plasmic-name={"rowContainer3"}
+                      data-plasmic-override={overrides.rowContainer3}
+                      className={classNames(projectcss.all, sty.rowContainer3)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.column__qBcXl
+                          sty.columns__lUe2X
                         )}
                       >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__rjl6)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"503"}
-                          loading={"lazy"}
-                          onScroll={async event => {
-                            const $steps = {};
-
-                            $steps["updateTextInputValue"] = true
-                              ? (() => {
-                                  const actionArgs = {
-                                    variable: {
-                                      objRoot: $state,
-                                      variablePath: ["textInput", "value"]
-                                    },
-                                    operation: 0
-                                  };
-                                  return (({
-                                    variable,
-                                    value,
-                                    startIndex,
-                                    deleteCount
-                                  }) => {
-                                    if (!variable) {
-                                      return;
-                                    }
-                                    const { objRoot, variablePath } = variable;
-
-                                    $stateSet(objRoot, variablePath, value);
-                                    return value;
-                                  })?.apply(null, [actionArgs]);
-                                })()
-                              : undefined;
-                            if (
-                              $steps["updateTextInputValue"] != null &&
-                              typeof $steps["updateTextInputValue"] ===
-                                "object" &&
-                              typeof $steps["updateTextInputValue"].then ===
-                                "function"
-                            ) {
-                              $steps["updateTextInputValue"] = await $steps[
-                                "updateTextInputValue"
-                              ];
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__qBcXl
+                          )}
+                        >
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img__rjl6)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
                             }
-                          }}
-                          src={
-                            "https://clickstay.s3-eu-west-1.amazonaws.com/images/blog/post/shutterstock_539320075.jpg"
-                          }
-                          width={"739"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__sQmD6
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"503"}
+                            loading={"lazy"}
+                            onScroll={async event => {
+                              const $steps = {};
+
+                              $steps["updateTextInputValue"] = true
+                                ? (() => {
+                                    const actionArgs = {
+                                      variable: {
+                                        objRoot: $state,
+                                        variablePath: ["textInput", "value"]
+                                      },
+                                      operation: 0
+                                    };
+                                    return (({
+                                      variable,
+                                      value,
+                                      startIndex,
+                                      deleteCount
+                                    }) => {
+                                      if (!variable) {
+                                        return;
+                                      }
+                                      const { objRoot, variablePath } =
+                                        variable;
+
+                                      $stateSet(objRoot, variablePath, value);
+                                      return value;
+                                    })?.apply(null, [actionArgs]);
+                                  })()
+                                : undefined;
+                              if (
+                                $steps["updateTextInputValue"] != null &&
+                                typeof $steps["updateTextInputValue"] ===
+                                  "object" &&
+                                typeof $steps["updateTextInputValue"].then ===
+                                  "function"
+                              ) {
+                                $steps["updateTextInputValue"] = await $steps[
+                                  "updateTextInputValue"
+                                ];
+                              }
+                            }}
+                            src={
+                              "https://clickstay.s3-eu-west-1.amazonaws.com/images/blog/post/shutterstock_539320075.jpg"
+                            }
+                            width={"739"}
+                          />
+                        </div>
+                        <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__ugFig
+                            sty.column__sQmD6
                           )}
                         >
-                          <h2
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
                             className={classNames(
                               projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2___2ZemQ
+                              sty.freeBox__ugFig
                             )}
                           >
-                            {"Breathtaking Landscapes"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__hvR1N
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "From golden beaches to misty mountains, Sri Lanka\u2019s landscapes are a dream. Relax by the ocean, hike through lush tea fields, or chase waterfalls all within a few hours' travel."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__zWdUs
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
+                            <ParallaxWrapper
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___6H8K4
+                                "__wab_instance",
+                                sty.scrollParallax__tuRj
                               )}
+                              speed={5}
                             >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__nHeSk
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            {"View our rooms"}
-                          </Button>
-                        </Stack__>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ParallaxWrapper>
-            </div>
-            <div
-              data-plasmic-name={"section13"}
-              data-plasmic-override={overrides.section13}
-              className={classNames(projectcss.all, sty.section13)}
-            >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax__eh7Lj
-                )}
-                speed={-8}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__zPfGm)}>
-                  <div
-                    data-plasmic-name={"rowContainer9"}
-                    data-plasmic-override={overrides.rowContainer9}
-                    className={classNames(projectcss.all, sty.rowContainer9)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.columns__diVrK)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__dsIOs
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__wsSy)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"1125"}
-                          loading={"lazy"}
-                          src={
-                            "https://archaeology-travel.com/cdn-cgi/image/quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2024/02/sigiriya-sunrise.jpg"
-                          }
-                          width={"2000"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column___6B0B6
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__qBgrr
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2___4TDEe
-                            )}
-                          >
-                            {"Rich History & Culture"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__pOcYs
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "Step back in time with ancient ruins, sacred temples, and colonial forts. Every city has a story, blending centuries-old traditions with vibrant local life."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__thKsz
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            {"View our rooms"}
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__pSkDl
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2___2ZemQ
+                                )}
+                              >
+                                {"Breathtaking Landscapes"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__kTcCd
+                                "__wab_instance",
+                                sty.scrollParallax__jQwRx
                               )}
+                              speed={10}
                             >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                        </Stack__>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ParallaxWrapper>
-            </div>
-            <div
-              data-plasmic-name={"section14"}
-              data-plasmic-override={overrides.section14}
-              className={classNames(projectcss.all, sty.section14)}
-            >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax__rbUgo
-                )}
-                speed={-6}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__gbd1R)}>
-                  <div
-                    data-plasmic-name={"rowContainer10"}
-                    data-plasmic-override={overrides.rowContainer10}
-                    className={classNames(projectcss.all, sty.rowContainer10)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.columns__why5N)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__imyUd
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__yhsRe)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"360"}
-                          loading={"lazy"}
-                          src={
-                            "https://t3.ftcdn.net/jpg/11/91/21/82/360_F_1191218234_LDG1wkhDT1P7eozV6RmeRAY1eApc8o0s.jpg"
-                          }
-                          width={"643"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(projectcss.all, sty.column__rkqC)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__wGly
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__vr0Sh
-                            )}
-                          >
-                            {"Delicious Food"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__vxYo
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "Spice up your journey with bold flavors! Enjoy aromatic rice and curry, sizzling kottu roti, and fresh seafood, all made with locally sourced ingredients."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__ythkX
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            <div
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__hvR1N
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "From golden beaches to misty mountains, Sri Lanka\u2019s landscapes are a dream. Relax by the ocean, hike through lush tea fields, or chase waterfalls all within a few hours' travel."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__gUFz
+                                "__wab_instance",
+                                sty.button__zWdUs
                               )}
+                              color={"softBlue"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___6H8K4
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__nHeSk
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
                             >
                               {"View our rooms"}
-                            </div>
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__oQmKp
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___9DL5
-                              )}
-                            >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                        </Stack__>
+                            </Button>
+                          </Stack__>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </ParallaxWrapper>
-            </div>
-            <div
-              data-plasmic-name={"section15"}
-              data-plasmic-override={overrides.section15}
-              className={classNames(projectcss.all, sty.section15)}
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal___8FEs)}
+              delay={2}
+              direction={"right"}
+              effect={"jackinthebox"}
+              triggerOnce={true}
             >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax__w5TBu
-                )}
-                speed={-2}
+              <div
+                data-plasmic-name={"section13"}
+                data-plasmic-override={overrides.section13}
+                className={classNames(projectcss.all, sty.section13)}
               >
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___0Q9ZB)}
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax__eh7Lj
+                  )}
+                  speed={-5}
                 >
                   <div
-                    data-plasmic-name={"rowContainer11"}
-                    data-plasmic-override={overrides.rowContainer11}
-                    className={classNames(projectcss.all, sty.rowContainer11)}
+                    className={classNames(projectcss.all, sty.freeBox__zPfGm)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.columns__n1Cbl)}
+                      data-plasmic-name={"rowContainer9"}
+                      data-plasmic-override={overrides.rowContainer9}
+                      className={classNames(projectcss.all, sty.rowContainer9)}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.column__ixJ37
+                          sty.columns__diVrK
                         )}
                       >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___6KFko)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"800"}
-                          loading={"lazy"}
-                          src={
-                            "https://www.latexforless.com/cdn/shop/articles/Sri_Lanka_1400x.progressive.jpg?v=1571077290"
-                          }
-                          width={"1129"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__cBxIu
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__so05W
+                            sty.column__dsIOs
                           )}
                         >
-                          <h2
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img__wsSy)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
+                            }
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"1125"}
+                            loading={"lazy"}
+                            src={
+                              "https://archaeology-travel.com/cdn-cgi/image/quality=90,format=auto,onerror=redirect,metadata=none/wp-content/uploads/2024/02/sigiriya-sunrise.jpg"
+                            }
+                            width={"2000"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column___6B0B6
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
                             className={classNames(
                               projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__jKk3S
+                              sty.freeBox__qBgrr
                             )}
                           >
-                            {"Adventure &\nOutdoor Activities"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__h9B4Y
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "Surf world-class waves, trek through scenic trails, or take a wildlife safari. Whether on land or sea, adventure is always within reach."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__yxPkl
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            {"View our rooms"}
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__w9JOd
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
+                            <ParallaxWrapper
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text___1HBff
+                                "__wab_instance",
+                                sty.scrollParallax___8Fk4Y
                               )}
+                              speed={5}
                             >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                        </Stack__>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ParallaxWrapper>
-            </div>
-            <div
-              data-plasmic-name={"section16"}
-              data-plasmic-override={overrides.section16}
-              className={classNames(projectcss.all, sty.section16)}
-            >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax__tSo4F
-                )}
-                speed={-8}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__qwXq)}>
-                  <div
-                    data-plasmic-name={"rowContainer12"}
-                    data-plasmic-override={overrides.rowContainer12}
-                    className={classNames(projectcss.all, sty.rowContainer12)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.columns__c9TP)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column__nqXoT
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___1V0)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"525"}
-                          loading={"lazy"}
-                          src={
-                            "https://i.insider.com/5c3b3553dde867481729e302?width=700"
-                          }
-                          width={"700"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(projectcss.all, sty.column__dl1X)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__ovEZ
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__uYtwf
-                            )}
-                          >
-                            {"Perfect Weather All Year"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__r7ZC4
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "With warm tropical weather year-round, there\u2019s always a perfect time to visit. Plan your trip based on the season and explore without limits."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__zZrm
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            <div
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2___4TDEe
+                                )}
+                              >
+                                {"Rich History & Culture"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__vBdAy
+                                "__wab_instance",
+                                sty.scrollParallax__exmhu
                               )}
+                              speed={10}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__pOcYs
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "Step back in time with ancient ruins, sacred temples, and colonial forts. Every city has a story, blending centuries-old traditions with vibrant local life."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__thKsz
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
                             >
                               {"View our rooms"}
-                            </div>
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__dXrmu
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
+                            </Button>
+                            <Button
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__uWqfS
+                                "__wab_instance",
+                                sty.button__pSkDl
                               )}
+                              color={"softBlue"}
+                              submitsForm={true}
                             >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                        </Stack__>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__kTcCd
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                          </Stack__>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </ParallaxWrapper>
-            </div>
-            <div
-              data-plasmic-name={"section17"}
-              data-plasmic-override={overrides.section17}
-              className={classNames(projectcss.all, sty.section17)}
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__rtvTw)}
+              delay={2}
+              effect={"jackinthebox"}
+              triggerOnce={true}
             >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax__d9O3M
-                )}
-                speed={-2}
+              <div
+                data-plasmic-name={"section14"}
+                data-plasmic-override={overrides.section14}
+                className={classNames(projectcss.all, sty.section14)}
               >
-                <div className={classNames(projectcss.all, sty.freeBox__dp9SN)}>
-                  <div
-                    data-plasmic-name={"rowContainer13"}
-                    data-plasmic-override={overrides.rowContainer13}
-                    className={classNames(projectcss.all, sty.rowContainer13)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.columns__uygsc)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column___1IBpg
-                        )}
-                      >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img__rcsdI)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"700"}
-                          loading={"lazy"}
-                          src={
-                            "https://dz3vy4jhqsnnj.cloudfront.net/sites/10/2024/06/Ayuwasa-Ayurveda-Centre-05-950.jpg"
-                          }
-                          width={"950"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.column___68Un6
-                        )}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__wCdzs
-                          )}
-                        >
-                          <h2
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__iNr5A
-                            )}
-                          >
-                            {"Wellness & Relaxation"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__jSd01
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "Rejuvenate with Ayurveda, yoga, and meditation. Find your balance in peaceful retreats surrounded by nature\u2019s serenity."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__gzNzn
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            {"View our rooms"}
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__tIYyS
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__nXdsb
-                              )}
-                            >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                        </Stack__>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </ParallaxWrapper>
-            </div>
-            <div
-              data-plasmic-name={"section18"}
-              data-plasmic-override={overrides.section18}
-              className={classNames(projectcss.all, sty.section18)}
-            >
-              <ParallaxWrapper
-                className={classNames(
-                  "__wab_instance",
-                  sty.scrollParallax__sWyAq
-                )}
-                speed={-5}
-              >
-                <div
-                  className={classNames(projectcss.all, sty.freeBox___6HdO3)}
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax__rbUgo
+                  )}
+                  speed={-5}
                 >
                   <div
-                    data-plasmic-name={"rowContainer14"}
-                    data-plasmic-override={overrides.rowContainer14}
-                    className={classNames(projectcss.all, sty.rowContainer14)}
+                    className={classNames(projectcss.all, sty.freeBox__gbd1R)}
                   >
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        sty.columns___09Ozp
-                      )}
+                      data-plasmic-name={"rowContainer10"}
+                      data-plasmic-override={overrides.rowContainer10}
+                      className={classNames(projectcss.all, sty.rowContainer10)}
                     >
                       <div
-                        className={classNames(projectcss.all, sty.column__xCPp)}
+                        className={classNames(
+                          projectcss.all,
+                          sty.columns__why5N
+                        )}
                       >
-                        <PlasmicImg__
-                          alt={""}
-                          className={classNames(sty.img___7Jxs)}
-                          displayHeight={
-                            hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "230px"
-                              : "415px"
-                          }
-                          displayMaxHeight={"none"}
-                          displayMaxWidth={"100%"}
-                          displayMinHeight={"0"}
-                          displayMinWidth={"0"}
-                          displayWidth={"100%"}
-                          height={"408"}
-                          loading={"lazy"}
-                          src={
-                            "https://media.istockphoto.com/id/1191557800/photo/water-fall.jpg?s=612x612&w=0&k=20&c=jOPXVab1an1MBvC-oZvmi3_Bi7kpeFN2h0BpRhpP-Ng="
-                          }
-                          width={"612"}
-                        />
-                      </div>
-                      <div
-                        className={classNames(projectcss.all, sty.column__a8Eu)}
-                      >
-                        <Stack__
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__yx6Xv
+                            sty.column__imyUd
                           )}
                         >
-                          <h2
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img__yhsRe)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
+                            }
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"360"}
+                            loading={"lazy"}
+                            src={
+                              "https://t3.ftcdn.net/jpg/11/91/21/82/360_F_1191218234_LDG1wkhDT1P7eozV6RmeRAY1eApc8o0s.jpg"
+                            }
+                            width={"643"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__rkqC
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
                             className={classNames(
                               projectcss.all,
-                              projectcss.h2,
-                              projectcss.__wab_text,
-                              sty.h2__fpoSt
+                              sty.freeBox__wGly
                             )}
                           >
-                            {"Budget-Friendly Destination"}
-                          </h2>
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.__wab_text,
-                              sty.text__lUsZ1
-                            )}
-                          >
-                            {hasVariant(globalVariants, "screen", "mobileOnly")
-                              ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
-                              : "Luxury or budget Sri Lanka offers incredible experiences for every traveler. Enjoy affordable stays, delicious meals, and unforgettable moments without overspending."}
-                          </div>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__hm5Qt
-                            )}
-                            color={"sand"}
-                            link={"#"}
-                            submitsForm={true}
-                          >
-                            <div
+                            <ParallaxWrapper
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__mw4P
+                                "__wab_instance",
+                                sty.scrollParallax__tbDg3
                               )}
+                              speed={5}
                             >
-                              {"View our rooms"}
-                            </div>
-                          </Button>
-                          <Button
-                            className={classNames(
-                              "__wab_instance",
-                              sty.button__f65DW
-                            )}
-                            color={"softBlue"}
-                            submitsForm={true}
-                          >
-                            <div
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2__vr0Sh
+                                )}
+                              >
+                                {"Delicious Food"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
                               className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__pIXca
+                                "__wab_instance",
+                                sty.scrollParallax__peOY
                               )}
+                              speed={10}
                             >
-                              {"Our Room"}
-                            </div>
-                          </Button>
-                        </Stack__>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__vxYo
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "Spice up your journey with bold flavors! Enjoy aromatic rice and curry, sizzling kottu roti, and fresh seafood, all made with locally sourced ingredients."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__ythkX
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__gUFz
+                                )}
+                              >
+                                {"View our rooms"}
+                              </div>
+                            </Button>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__oQmKp
+                              )}
+                              color={"softBlue"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___9DL5
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                          </Stack__>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </ParallaxWrapper>
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__clyOx)}
+              delay={2}
+              effect={"jackinthebox"}
+              triggerOnce={true}
+            >
+              <div
+                data-plasmic-name={"section15"}
+                data-plasmic-override={overrides.section15}
+                className={classNames(projectcss.all, sty.section15)}
+              >
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax__w5TBu
+                  )}
+                  speed={-5}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___0Q9ZB)}
+                  >
+                    <div
+                      data-plasmic-name={"rowContainer11"}
+                      data-plasmic-override={overrides.rowContainer11}
+                      className={classNames(projectcss.all, sty.rowContainer11)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.columns__n1Cbl
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__ixJ37
+                          )}
+                        >
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img___6KFko)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
+                            }
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"800"}
+                            loading={"lazy"}
+                            src={
+                              "https://www.latexforless.com/cdn/shop/articles/Sri_Lanka_1400x.progressive.jpg?v=1571077290"
+                            }
+                            width={"1129"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__cBxIu
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__so05W
+                            )}
+                          >
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax__vpNv2
+                              )}
+                              speed={5}
+                            >
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2__jKk3S
+                                )}
+                              >
+                                {"Adventure &\nOutdoor Activities"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax__zzh8T
+                              )}
+                              speed={10}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__h9B4Y
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "Surf world-class waves, trek through scenic trails, or take a wildlife safari. Whether on land or sea, adventure is always within reach."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__yxPkl
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
+                            >
+                              {"View our rooms"}
+                            </Button>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__w9JOd
+                              )}
+                              color={"softBlue"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text___1HBff
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                          </Stack__>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal___2JuW)}
+              delay={2}
+              effect={"jackinthebox"}
+              triggerOnce={true}
+            >
+              <div
+                data-plasmic-name={"section16"}
+                data-plasmic-override={overrides.section16}
+                className={classNames(projectcss.all, sty.section16)}
+              >
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax__tSo4F
+                  )}
+                  speed={-5}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__qwXq)}
+                  >
+                    <div
+                      data-plasmic-name={"rowContainer12"}
+                      data-plasmic-override={overrides.rowContainer12}
+                      className={classNames(projectcss.all, sty.rowContainer12)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.columns__c9TP
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__nqXoT
+                          )}
+                        >
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img___1V0)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
+                            }
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"525"}
+                            loading={"lazy"}
+                            src={
+                              "https://i.insider.com/5c3b3553dde867481729e302?width=700"
+                            }
+                            width={"700"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__dl1X
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__ovEZ
+                            )}
+                          >
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax__njJpi
+                              )}
+                              speed={5}
+                            >
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2__uYtwf
+                                )}
+                              >
+                                {"Perfect Weather All Year"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax__nHyW8
+                              )}
+                              speed={10}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__r7ZC4
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "With warm tropical weather year-round, there\u2019s always a perfect time to visit. Plan your trip based on the season and explore without limits."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__zZrm
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__vBdAy
+                                )}
+                              >
+                                {"View our rooms"}
+                              </div>
+                            </Button>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__dXrmu
+                              )}
+                              color={"softBlue"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__uWqfS
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                          </Stack__>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__ddukO)}
+              delay={2}
+              effect={"jackinthebox"}
+              triggerOnce={true}
+            >
+              <div
+                data-plasmic-name={"section17"}
+                data-plasmic-override={overrides.section17}
+                className={classNames(projectcss.all, sty.section17)}
+              >
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax__d9O3M
+                  )}
+                  speed={-5}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__dp9SN)}
+                  >
+                    <div
+                      data-plasmic-name={"rowContainer13"}
+                      data-plasmic-override={overrides.rowContainer13}
+                      className={classNames(projectcss.all, sty.rowContainer13)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.columns__uygsc
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column___1IBpg
+                          )}
+                        >
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img__rcsdI)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
+                            }
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"700"}
+                            loading={"lazy"}
+                            src={
+                              "https://dz3vy4jhqsnnj.cloudfront.net/sites/10/2024/06/Ayuwasa-Ayurveda-Centre-05-950.jpg"
+                            }
+                            width={"950"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column___68Un6
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__wCdzs
+                            )}
+                          >
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax___9PfU1
+                              )}
+                              speed={5}
+                            >
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2__iNr5A
+                                )}
+                              >
+                                {"Wellness & Relaxation"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax___9Qsfj
+                              )}
+                              speed={10}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__jSd01
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "Rejuvenate with Ayurveda, yoga, and meditation. Find your balance in peaceful retreats surrounded by nature\u2019s serenity."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__gzNzn
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
+                            >
+                              {"View our rooms"}
+                            </Button>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__tIYyS
+                              )}
+                              color={"softBlue"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__nXdsb
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                          </Stack__>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__iOzYk)}
+              delay={2}
+              effect={"jackinthebox"}
+              triggerOnce={true}
+            >
+              <div
+                data-plasmic-name={"section18"}
+                data-plasmic-override={overrides.section18}
+                className={classNames(projectcss.all, sty.section18)}
+              >
+                <ParallaxWrapper
+                  className={classNames(
+                    "__wab_instance",
+                    sty.scrollParallax__sWyAq
+                  )}
+                  speed={-5}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___6HdO3)}
+                  >
+                    <div
+                      data-plasmic-name={"rowContainer14"}
+                      data-plasmic-override={overrides.rowContainer14}
+                      className={classNames(projectcss.all, sty.rowContainer14)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.columns___09Ozp
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__xCPp
+                          )}
+                        >
+                          <PlasmicImg__
+                            alt={""}
+                            className={classNames(sty.img___7Jxs)}
+                            displayHeight={
+                              hasVariant(globalVariants, "screen", "mobileOnly")
+                                ? "230px"
+                                : "415px"
+                            }
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"100%"}
+                            height={"408"}
+                            loading={"lazy"}
+                            src={
+                              "https://media.istockphoto.com/id/1191557800/photo/water-fall.jpg?s=612x612&w=0&k=20&c=jOPXVab1an1MBvC-oZvmi3_Bi7kpeFN2h0BpRhpP-Ng="
+                            }
+                            width={"612"}
+                          />
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.column__a8Eu
+                          )}
+                        >
+                          <Stack__
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__yx6Xv
+                            )}
+                          >
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax__waTvr
+                              )}
+                              speed={5}
+                            >
+                              <h2
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.h2,
+                                  projectcss.__wab_text,
+                                  sty.h2__fpoSt
+                                )}
+                              >
+                                {"Budget-Friendly Destination"}
+                              </h2>
+                            </ParallaxWrapper>
+                            <ParallaxWrapper
+                              className={classNames(
+                                "__wab_instance",
+                                sty.scrollParallax__nmnCm
+                              )}
+                              speed={10}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__lUsZ1
+                                )}
+                              >
+                                {hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "mobileOnly"
+                                )
+                                  ? "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ."
+                                  : "Luxury or budget Sri Lanka offers incredible experiences for every traveler. Enjoy affordable stays, delicious meals, and unforgettable moments without overspending."}
+                              </div>
+                            </ParallaxWrapper>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__hm5Qt
+                              )}
+                              color={"sand"}
+                              link={"#"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__mw4P
+                                )}
+                              >
+                                {"View our rooms"}
+                              </div>
+                            </Button>
+                            <Button
+                              className={classNames(
+                                "__wab_instance",
+                                sty.button__f65DW
+                              )}
+                              color={"softBlue"}
+                              submitsForm={true}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.__wab_text,
+                                  sty.text__pIXca
+                                )}
+                              >
+                                {"Our Room"}
+                              </div>
+                            </Button>
+                          </Stack__>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </ParallaxWrapper>
+              </div>
+            </Reveal>
+            <div className={classNames(projectcss.all, sty.freeBox___8JqAf)}>
+              <FlyingPostersContainer
+                data-plasmic-name={"flyingPostersContainer"}
+                data-plasmic-override={overrides.flyingPostersContainer}
+                className={classNames(
+                  "__wab_instance",
+                  sty.flyingPostersContainer
+                )}
+                planeHeight={415}
+                planeWidth={517}
+              />
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__zzVxu)}>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__mnYw)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/sincerely_sri_lankan_website/images/image3.png",
+                fullWidth: 1501,
+                fullHeight: 1016,
+                aspectRatio: undefined
+              }}
+            />
+
             <div
               data-plasmic-name={"section1"}
               data-plasmic-override={overrides.section1}
@@ -1243,42 +1550,67 @@ function PlasmicHomepage__RenderFunc(props: {
             </div>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__il1Fw)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__piGjt)}
+            <Reveal
+              cascade={false}
+              className={classNames("__wab_instance", sty.reveal___1DLej)}
+              reverse={false}
+              triggerOnce={true}
             >
-              <div className={classNames(projectcss.all, sty.freeBox__lyZUj)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__m1OXt
-                  )}
-                >
-                  {
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur."
-                  }
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__piGjt)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__lyZUj)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__m1OXt
+                    )}
+                  >
+                    {
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur."
+                    }
+                  </div>
                 </div>
-              </div>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__gNuxd)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"50%"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/sincerely_sri_lankan_website/images/image3.png",
-                  fullWidth: 1501,
-                  fullHeight: 1016,
-                  aspectRatio: undefined
-                }}
-              />
-            </Stack__>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__gNuxd)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"50%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/sincerely_sri_lankan_website/images/image3.png",
+                    fullWidth: 1501,
+                    fullHeight: 1016,
+                    aspectRatio: undefined
+                  }}
+                />
+
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__qmIye)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"50%"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/sincerely_sri_lankan_website/images/image5.png",
+                    fullWidth: 200,
+                    fullHeight: 200,
+                    aspectRatio: undefined
+                  }}
+                />
+              </Stack__>
+            </Reveal>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__k6IFy)}>
             <Stack__
@@ -1286,114 +1618,144 @@ function PlasmicHomepage__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox___0Gym8)}
             >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__jkjEp)}
+              <Reveal
+                className={classNames("__wab_instance", sty.reveal__ilwFj)}
+                triggerOnce={true}
               >
-                <div className={classNames(projectcss.all, sty.column__aLm0U)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__lAbe1)}
-                    displayHeight={"434px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "none"
-                        : "100%"
-                    }
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/sincerely_sri_lankan_website/images/mjTangonanOe6QLhRHhhsUnsplashJpg.jpg",
-                      fullWidth: 2734,
-                      fullHeight: 4096,
-                      aspectRatio: undefined
-                    }}
-                  />
-
-                  <h2
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h2,
-                      projectcss.__wab_text,
-                      sty.h2__xjcEd
-                    )}
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__jkjEp)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__aLm0U)}
                   >
-                    {"Volunteer with AIESEC"}
-                  </h2>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__nEalp)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__wRvQc)}
-                    displayHeight={"434px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "none"
-                        : "100%"
-                    }
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/sincerely_sri_lankan_website/images/coconut1Jpg.jpg",
-                      fullWidth: 800,
-                      fullHeight: 1200,
-                      aspectRatio: undefined
-                    }}
-                  />
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__lAbe1)}
+                      displayHeight={"434px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "none"
+                          : "100%"
+                      }
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/sincerely_sri_lankan_website/images/image7.png",
+                        fullWidth: 741,
+                        fullHeight: 347,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                  <h2
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h2,
-                      projectcss.__wab_text,
-                      sty.h2__j6Ayp
-                    )}
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__xjcEd
+                      )}
+                      component={Link}
+                      href={
+                        "https://docs.google.com/spreadsheets/d/1j6IkDXwEbCLA2Jt2YYuJcL8E2YTnYjudADOAVxirjZI/edit?usp=sharing"
+                      }
+                      platform={"nextjs"}
+                      target={"_blank"}
+                      title={"National iGV Tool"}
+                    >
+                      {"Volunteer with AIESEC"}
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__nEalp)}
                   >
-                    {"Intern with AIESEC"}
-                  </h2>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__qSvtY)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img___8WesR)}
-                    displayHeight={"434px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? "none"
-                        : "100%"
-                    }
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/sincerely_sri_lankan_website/images/coconut1Jpg.jpg",
-                      fullWidth: 800,
-                      fullHeight: 1200,
-                      aspectRatio: undefined
-                    }}
-                  />
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__wRvQc)}
+                      displayHeight={"434px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "none"
+                          : "100%"
+                      }
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/sincerely_sri_lankan_website/images/image8.png",
+                        fullWidth: 600,
+                        fullHeight: 360,
+                        aspectRatio: undefined
+                      }}
+                    />
 
-                  <h2
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h2,
-                      projectcss.__wab_text,
-                      sty.h2__w58TR
-                    )}
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__j6Ayp
+                      )}
+                      component={Link}
+                      href={
+                        "https://docs.google.com/spreadsheets/d/1j6IkDXwEbCLA2Jt2YYuJcL8E2YTnYjudADOAVxirjZI/edit?usp=sharing"
+                      }
+                      platform={"nextjs"}
+                      target={"_blank"}
+                    >
+                      {"Intern with AIESEC"}
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__qSvtY)}
                   >
-                    {"Teach with AIESEC"}
-                  </h2>
-                </div>
-              </Stack__>
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img___8WesR)}
+                      displayHeight={"434px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={
+                        hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "none"
+                          : "100%"
+                      }
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      loading={"lazy"}
+                      src={{
+                        src: "/plasmic/sincerely_sri_lankan_website/images/image9.png",
+                        fullWidth: 750,
+                        fullHeight: 454,
+                        aspectRatio: undefined
+                      }}
+                    />
+
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.__wab_text,
+                        sty.link__w58TR
+                      )}
+                      component={Link}
+                      href={
+                        "https://docs.google.com/spreadsheets/d/1j6IkDXwEbCLA2Jt2YYuJcL8E2YTnYjudADOAVxirjZI/edit?usp=sharing"
+                      }
+                      platform={"nextjs"}
+                      target={"_blank"}
+                    >
+                      {"Teach with AIESEC"}
+                    </PlasmicLink__>
+                  </div>
+                </Stack__>
+              </Reveal>
             </Stack__>
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__rqYtG)}>
@@ -1444,6 +1806,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   <Button
                     className={classNames("__wab_instance", sty.button__onY1)}
                     color={"sand"}
+                    onClick={async event => {
+                      const $steps = {};
+                    }}
                     submitsForm={true}
                   >
                     <div
@@ -1483,7 +1848,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__v2MwH
                     )}
                   >
-                    {"2478 Lorem Ipsum \nLorem Ipsum , Lorem Ipsum "}
+                    {"No 102/2, Nagahawatta Road,\nMaharagama, Sri Lanka"}
                   </div>
                   <div
                     className={classNames(
@@ -1492,7 +1857,7 @@ function PlasmicHomepage__RenderFunc(props: {
                       sty.text__bp5AO
                     )}
                   >
-                    {"P: 555.789.5643"}
+                    {"P: +94 112 746 190"}
                   </div>
                   <div
                     className={classNames(
@@ -1712,6 +2077,7 @@ const PlasmicDescendants = {
     "rowContainer13",
     "section18",
     "rowContainer14",
+    "flyingPostersContainer",
     "section1",
     "rowContainer8",
     "textInput",
@@ -1737,7 +2103,8 @@ const PlasmicDescendants = {
     "section17",
     "rowContainer13",
     "section18",
-    "rowContainer14"
+    "rowContainer14",
+    "flyingPostersContainer"
   ],
   section12: ["section12", "rowContainer3"],
   rowContainer3: ["rowContainer3"],
@@ -1753,6 +2120,7 @@ const PlasmicDescendants = {
   rowContainer13: ["rowContainer13"],
   section18: ["section18", "rowContainer14"],
   rowContainer14: ["rowContainer14"],
+  flyingPostersContainer: ["flyingPostersContainer"],
   section1: ["section1", "rowContainer8"],
   rowContainer8: ["rowContainer8"],
   textInput: ["textInput"],
@@ -1783,6 +2151,7 @@ type NodeDefaultElementType = {
   rowContainer13: "div";
   section18: "div";
   rowContainer14: "div";
+  flyingPostersContainer: typeof FlyingPostersContainer;
   section1: "div";
   rowContainer8: "div";
   textInput: typeof TextInput;
@@ -1869,6 +2238,7 @@ export const PlasmicHomepage = Object.assign(
     rowContainer13: makeNodeComponent("rowContainer13"),
     section18: makeNodeComponent("section18"),
     rowContainer14: makeNodeComponent("rowContainer14"),
+    flyingPostersContainer: makeNodeComponent("flyingPostersContainer"),
     section1: makeNodeComponent("section1"),
     rowContainer8: makeNodeComponent("rowContainer8"),
     textInput: makeNodeComponent("textInput"),

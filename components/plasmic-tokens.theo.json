@@ -1491,6 +1491,26 @@
       }
     },
     {
+      "name": "cardGgradient",
+      "type": "color",
+      "value": "#D78100",
+      "category": "color",
+      "meta": {
+        "projectId": "quDeq6xe5KMiTCfKiiLfyW",
+        "id": "EoVbPcmO9eNZ"
+      }
+    },
+    {
+      "name": "cardGradient2",
+      "type": "color",
+      "value": "#FFDB56",
+      "category": "color",
+      "meta": {
+        "projectId": "quDeq6xe5KMiTCfKiiLfyW",
+        "id": "qgTcwNrIxvO3"
+      }
+    },
+    {
       "name": "heading-red",
       "type": "color",
       "value": "#504D4D",

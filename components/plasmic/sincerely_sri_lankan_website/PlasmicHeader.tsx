@@ -173,6 +173,34 @@ function PlasmicHeader__RenderFunc(props: {
           displayMinHeight={"0"}
           displayMinWidth={"0"}
           displayWidth={"auto"}
+          onClick={async event => {
+            const $steps = {};
+
+            $steps["goToHomepage"] = true
+              ? (() => {
+                  const actionArgs = { destination: `/` };
+                  return (({ destination }) => {
+                    if (
+                      typeof destination === "string" &&
+                      destination.startsWith("#")
+                    ) {
+                      document
+                        .getElementById(destination.substr(1))
+                        .scrollIntoView({ behavior: "smooth" });
+                    } else {
+                      __nextRouter?.push(destination);
+                    }
+                  })?.apply(null, [actionArgs]);
+                })()
+              : undefined;
+            if (
+              $steps["goToHomepage"] != null &&
+              typeof $steps["goToHomepage"] === "object" &&
+              typeof $steps["goToHomepage"].then === "function"
+            ) {
+              $steps["goToHomepage"] = await $steps["goToHomepage"];
+            }
+          }}
           src={{
             src: "/plasmic/sincerely_sri_lankan_website/images/logoYellowPng.png",
             fullWidth: 3771,
@@ -207,6 +235,34 @@ function PlasmicHeader__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__eaUb7
               )}
+              onClick={async event => {
+                const $steps = {};
+
+                $steps["goToHomepage"] = true
+                  ? (() => {
+                      const actionArgs = { destination: `/` };
+                      return (({ destination }) => {
+                        if (
+                          typeof destination === "string" &&
+                          destination.startsWith("#")
+                        ) {
+                          document
+                            .getElementById(destination.substr(1))
+                            .scrollIntoView({ behavior: "smooth" });
+                        } else {
+                          __nextRouter?.push(destination);
+                        }
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["goToHomepage"] != null &&
+                  typeof $steps["goToHomepage"] === "object" &&
+                  typeof $steps["goToHomepage"].then === "function"
+                ) {
+                  $steps["goToHomepage"] = await $steps["goToHomepage"];
+                }
+              }}
             >
               {hasVariant(globalVariants, "screen", "mobileOnly")
                 ? "About"
@@ -236,15 +292,22 @@ function PlasmicHeader__RenderFunc(props: {
                 role={"img"}
               />
             ) : null}
-            <div
+            <PlasmicLink__
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__kEIW
+                sty.link__kEIW
               )}
+              component={Link}
+              href={
+                "https://docs.google.com/spreadsheets/d/1j6IkDXwEbCLA2Jt2YYuJcL8E2YTnYjudADOAVxirjZI/edit?usp=sharing"
+              }
+              platform={"nextjs"}
+              target={"_blank"}
             >
               {"Opportunities"}
-            </div>
+            </PlasmicLink__>
             {false ? (
               <IconIcon
                 className={classNames(projectcss.all, sty.svg__ym4Rj)}
@@ -275,6 +338,36 @@ function PlasmicHeader__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__wki1X
               )}
+              onClick={async event => {
+                const $steps = {};
+
+                $steps["goToExchangespage"] = true
+                  ? (() => {
+                      const actionArgs = { destination: `/exchangespage` };
+                      return (({ destination }) => {
+                        if (
+                          typeof destination === "string" &&
+                          destination.startsWith("#")
+                        ) {
+                          document
+                            .getElementById(destination.substr(1))
+                            .scrollIntoView({ behavior: "smooth" });
+                        } else {
+                          __nextRouter?.push(destination);
+                        }
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["goToExchangespage"] != null &&
+                  typeof $steps["goToExchangespage"] === "object" &&
+                  typeof $steps["goToExchangespage"].then === "function"
+                ) {
+                  $steps["goToExchangespage"] = await $steps[
+                    "goToExchangespage"
+                  ];
+                }
+              }}
             >
               {"Impactful Exchanges"}
             </div>
@@ -308,6 +401,34 @@ function PlasmicHeader__RenderFunc(props: {
                 projectcss.__wab_text,
                 sty.text__so4Dv
               )}
+              onClick={async event => {
+                const $steps = {};
+
+                $steps["goToLCpage"] = true
+                  ? (() => {
+                      const actionArgs = { destination: `/lcpage` };
+                      return (({ destination }) => {
+                        if (
+                          typeof destination === "string" &&
+                          destination.startsWith("#")
+                        ) {
+                          document
+                            .getElementById(destination.substr(1))
+                            .scrollIntoView({ behavior: "smooth" });
+                        } else {
+                          __nextRouter?.push(destination);
+                        }
+                      })?.apply(null, [actionArgs]);
+                    })()
+                  : undefined;
+                if (
+                  $steps["goToLCpage"] != null &&
+                  typeof $steps["goToLCpage"] === "object" &&
+                  typeof $steps["goToLCpage"].then === "function"
+                ) {
+                  $steps["goToLCpage"] = await $steps["goToLCpage"];
+                }
+              }}
             >
               {"Local Committees"}
             </div>
@@ -370,6 +491,34 @@ function PlasmicHeader__RenderFunc(props: {
                 {"Contact Us"}
               </div>
             }
+            onClick={async event => {
+              const $steps = {};
+
+              $steps["goToContactpage"] = true
+                ? (() => {
+                    const actionArgs = { destination: `/contactpage` };
+                    return (({ destination }) => {
+                      if (
+                        typeof destination === "string" &&
+                        destination.startsWith("#")
+                      ) {
+                        document
+                          .getElementById(destination.substr(1))
+                          .scrollIntoView({ behavior: "smooth" });
+                      } else {
+                        __nextRouter?.push(destination);
+                      }
+                    })?.apply(null, [actionArgs]);
+                  })()
+                : undefined;
+              if (
+                $steps["goToContactpage"] != null &&
+                typeof $steps["goToContactpage"] === "object" &&
+                typeof $steps["goToContactpage"].then === "function"
+              ) {
+                $steps["goToContactpage"] = await $steps["goToContactpage"];
+              }
+            }}
             type={"soft"}
           />
 
