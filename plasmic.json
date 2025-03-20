@@ -1145,12 +1145,6 @@
           "name": "FlowingMenuContainer",
           "displayName": "FlowingMenuContainer",
           "componentImportPath": "./components/FlowingMenu/FlowingMenuContainer"
-        },
-        {
-          "id": "7jhaErP1__2L",
-          "name": "RollingGallery",
-          "displayName": "RollingGallery",
-          "componentImportPath": "./components/RollingGallery/RollingGallery"
         }
       ],
       "customFunctions": []
