@@ -1129,12 +1129,6 @@
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         },
         {
-          "id": "dVerKHJA2GrA",
-          "name": "Greetings",
-          "displayName": "Greetings",
-          "componentImportPath": "./components/Greetings"
-        },
-        {
           "id": "y16k3U0uSpK3",
           "name": "InfiniteMenuContainer",
           "displayName": "InfiniteMenuContainer",
