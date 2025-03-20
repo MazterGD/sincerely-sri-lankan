@@ -4,19 +4,31 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build || true",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@plasmicapp/cli": "^0.1.336",
     "@plasmicapp/loader-nextjs": "^1.0.417",
+    "@plasmicapp/react-web": "^0.2.377",
+    "@plasmicpkgs/antd5": "^0.0.278",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.234",
+    "@plasmicpkgs/react-aria": "^0.0.119",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.213",
+    "@plasmicpkgs/react-parallax-tilt": "^0.0.211",
+    "@plasmicpkgs/react-scroll-parallax": "^0.0.219",
+    "@plasmicpkgs/react-slick": "^0.0.232",
+    "@plasmicpkgs/react-youtube": "^7.13.215",
     "framer-motion": "^11.18.2",
     "gl-matrix": "^3.4.3",
     "gsap": "^3.12.7",
     "next": "14.2.25",
     "ogl": "^1.0.11",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",
