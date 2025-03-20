@@ -64,7 +64,6 @@ import { Video } from "@plasmicpkgs/plasmic-basic-components";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
 import Button from "../../Button"; // plasmic-import: 0EHALpIu9wa4/component
-import { FlyingPostersContainer } from "../../FlyingPosters/FlyingPostersContainer"; // plasmic-import: lViaiJ5xaHZ1/codeComponent
 import TextInput from "../../TextInput"; // plasmic-import: XnjXtIWN8Mpf/component
 
 import { useScreenVariants as useScreenVariantseoIIho6Ui3Kx } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: eoIIho6UI3KX/globalVariant
@@ -114,7 +113,6 @@ export type PlasmicHomepage__OverridesType = {
   rowContainer13?: Flex__<"div">;
   section18?: Flex__<"div">;
   rowContainer14?: Flex__<"div">;
-  flyingPostersContainer?: Flex__<typeof FlyingPostersContainer>;
   section1?: Flex__<"div">;
   rowContainer8?: Flex__<"div">;
   textInput?: Flex__<typeof TextInput>;
@@ -1490,18 +1488,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 </ParallaxWrapper>
               </div>
             </Reveal>
-            <div className={classNames(projectcss.all, sty.freeBox___8JqAf)}>
-              <FlyingPostersContainer
-                data-plasmic-name={"flyingPostersContainer"}
-                data-plasmic-override={overrides.flyingPostersContainer}
-                className={classNames(
-                  "__wab_instance",
-                  sty.flyingPostersContainer
-                )}
-                planeHeight={415}
-                planeWidth={517}
-              />
-            </div>
+            <div className={classNames(projectcss.all, sty.freeBox___8JqAf)} />
           </div>
           <div className={classNames(projectcss.all, sty.freeBox__zzVxu)}>
             <PlasmicImg__
@@ -2077,7 +2064,6 @@ const PlasmicDescendants = {
     "rowContainer13",
     "section18",
     "rowContainer14",
-    "flyingPostersContainer",
     "section1",
     "rowContainer8",
     "textInput",
@@ -2103,8 +2089,7 @@ const PlasmicDescendants = {
     "section17",
     "rowContainer13",
     "section18",
-    "rowContainer14",
-    "flyingPostersContainer"
+    "rowContainer14"
   ],
   section12: ["section12", "rowContainer3"],
   rowContainer3: ["rowContainer3"],
@@ -2120,7 +2105,6 @@ const PlasmicDescendants = {
   rowContainer13: ["rowContainer13"],
   section18: ["section18", "rowContainer14"],
   rowContainer14: ["rowContainer14"],
-  flyingPostersContainer: ["flyingPostersContainer"],
   section1: ["section1", "rowContainer8"],
   rowContainer8: ["rowContainer8"],
   textInput: ["textInput"],
@@ -2151,7 +2135,6 @@ type NodeDefaultElementType = {
   rowContainer13: "div";
   section18: "div";
   rowContainer14: "div";
-  flyingPostersContainer: typeof FlyingPostersContainer;
   section1: "div";
   rowContainer8: "div";
   textInput: typeof TextInput;
@@ -2238,7 +2221,6 @@ export const PlasmicHomepage = Object.assign(
     rowContainer13: makeNodeComponent("rowContainer13"),
     section18: makeNodeComponent("section18"),
     rowContainer14: makeNodeComponent("rowContainer14"),
-    flyingPostersContainer: makeNodeComponent("flyingPostersContainer"),
     section1: makeNodeComponent("section1"),
     rowContainer8: makeNodeComponent("rowContainer8"),
     textInput: makeNodeComponent("textInput"),
